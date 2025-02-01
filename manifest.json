@@ -1,0 +1,21 @@
+﻿{
+    "name": "Shivers",
+    "game_name": "Shivers",
+    "package_version": "0.4",
+    "package_uid": "shivers_pack",
+    "author": "Jasbird",
+    "variants": {
+        "standard": {
+            "display_name": "Map Tracker",
+            "flags": [
+                "ap" //enables AP autotracking interface - remove if not needed
+            ]
+        },
+        "var_itemsonly": {
+            "display_name": "Items Only",
+            "flags": [
+                "ap" //enables AP autotracking interface - remove if not needed
+            ]
+        }
+    }
+}

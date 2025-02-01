@@ -1,0 +1,156 @@
+﻿{    "tracker_default": {
+        "type": "container",
+        "background": "#000000",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "left",
+                    "v_alignment": "stretch",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Items",
+                            "dock": "top",
+                            "content": {
+                                "type": "layout",
+                                "key": "shared_item_grid"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": ["Outside Museum"]
+                            }
+                        },
+                        {
+                            "title": "Basement",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Basement"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Main Floor",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Main Floor"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "2nd Floor",
+                            "content": {
+                                "type": "map",
+                                "maps": ["Second Floor"]
+                            }
+                        },
+                        {
+                            "title": "3rd Floor",
+                            "content": {
+                                "type": "map",
+                                "maps": ["Third Floor"]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "tracker_horizontal": {
+        "type": "container",
+        "background": "#000000",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "bottom",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Items",
+                            "dock": "left",
+                            "margin": "0,0,3,0",
+                            "content": {
+                                "type": "layout",
+                                "h_alignment": "center",
+                                "v_alignment": "center",
+                                "key": "shared_item_grid"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Outside",
+                            "content": {
+                                "type": "map",
+                                "maps": ["Outside Museum"]
+                            }
+                        },
+                        {
+                            "title": "Basement",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Basement"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Main Floor",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Main Floor"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Second Floor",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Second Floor"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Third Floor",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Third Floor"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fourth Floor",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Fourth Floor"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

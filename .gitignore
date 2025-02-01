@@ -1,0 +1,6 @@
+todo.*
+.~lock.*
+*.xcf
+.idea/*
+!.idea/runConfigurations/
+/.idea/
