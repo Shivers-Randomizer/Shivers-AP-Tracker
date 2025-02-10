@@ -6,7 +6,7 @@ end
 -- LAKE ACCESS:
 -- lake key, *or* Front + Office Elevator + Office
 function has_lake_access()
-    return has("LakeKey") or (has("FrontKey") and has("OfficeKey") and has("OfficeElKey"))
+    return has("LakeKey") or office_from_lobby() and has("OfficeElKey")
 end
 
 -- LOBBY ACCESS:
@@ -15,7 +15,7 @@ function has_lobby_access()
     return has("FrontKey") or lobby_from_lake()
 end
 function lobby_from_lake()
-    return has("LakeKey") and has("OfficeElKey") and has("OfficeKey")
+    return office_from_lake() and has("OfficeKey")
 end
 
 -- OFFICE ACCESS:
@@ -31,10 +31,18 @@ function office_from_lake()
     return has("LakeKey") and has("OfficeElKey")
 end
 
+function has_office_elevator_access()
+    return (has("LakeKey") or office_from_lobby()) and has("OfficeElKey")
+end
+
+function has_bedroom_elevator_access()
+    return has_office_access() and has("Crawling") and has("BedElKey")
+end
+
 -- BEDROOM ACCESS:
 -- take crawlspace from office, use elevator and enter bedroom
 function has_bedroom_access()
-    return has_office_access() and has("Crawling") and has("BedElKey") and has("BedKey")
+    return has_bedroom_elevator_access() and has("BedKey")
 end
 
 -- WORKSHOP ACCESS:
@@ -47,7 +55,7 @@ end
 -- from lobby: direct door
 -- from back corridor: direct door
 function has_library_access()
-    return library_from_lobby() or library_from_corridor()
+    return library_from_lobby() or corridor_from_theater() or corridor_from_maze()
 end
 function library_from_lobby()
     return has_lobby_access() and has("LibraryKey")
@@ -65,6 +73,10 @@ function corridor_from_theater()
 end
 function corridor_from_maze()
     return maze_from_egypt() and has("ThreeElKey")
+end
+
+function has_three_floor_elevator_access()
+    return (has_back_corridor_access() or has_maze_access()) and has("ThreeElKey")
 end
 
 -- GENERATOR ACCESS:
@@ -180,41 +192,41 @@ end
 
 
 function can_capture_ash() -- OFFICE, BURIAL
-    return has_office_access() or has_egypt_access()
+    return (has_office_access() or has_egypt_access()) and (has("AshTop") and has("AshBottom") or has("AshComplete"))
 end
 
 function can_capture_cloth() -- EGYPT, BATHROOM, BURIAL
-    return has_egypt_access() or has_bathroom_access()
+    return (has_egypt_access() or has_bathroom_access()) and (has("ClothTop") and has("ClothBottom") or has("ClothComplete"))
 end
 
 function can_capture_crystal() -- LOBBY, OCEAN
-    return has_lobby_access()
+    return has_lobby_access() and (has("CrystalTop") and has("CrystalBottom") or has("CrystalComplete"))
 end
 
 function can_capture_lightning() -- GENERATOR; currently assumes Early Lightning
-    return  has_generator_access()
+    return  has_generator_access() and (has("LightningTop") and has("LightningBottom") or has("LightningComplete"))
 end
 
 function can_capture_metal() -- BEDROOM, PROJECTOR, BEASTS
-    return has_bedroom_access() or has_projector_access() or has_beast_access()
+    return (has_bedroom_access() or has_projector_access() or has_beast_access()) and (has("MetalTop") and has("MetalBottom") or has("MetalComplete"))
 end
 
 function can_capture_oil() -- BEASTS, SUBTERRANEAN
-    return has_beast_access()
+    return has_beast_access() and (has("OilTop") and has("OilBottom") or has("OilComplete"))
 end
 
 function can_capture_sand() -- OCEAN, PLANTS
-    return has_ocean_access() or has_plant_access()
+    return (has_ocean_access() or has_plant_access()) and (has("SandTop") and has("SandBottom") or has("SandComplete"))
 end
 
 function can_capture_water() -- LOBBY, BATHROOM
-    return has_lobby_access()
+    return (has_lobby_access() or has_bathroom_access()) and (has("WaterTop") and has("WaterBottom") or has("WaterComplete"))
 end
 
 function can_capture_wax() -- LIBRARY, SHAMAN, MYTHS
-    return has_library_access() or has_shaman_access() or has_myth_access()
+    return (has_library_access() or has_shaman_access() or has_myth_access()) and (has("WaxTop") and has("WaxBottom") or has("WaxComplete"))
 end
 
 function can_capture_wood() -- MAZE, MYTHS, GODS, WORKSHOP
-    return has_workshop_access() or has_maze_access() or has_myth_access() or has_shaman_access() 
+    return (has_workshop_access() or has_maze_access() or has_myth_access() or has_shaman_access()) and (has("WoodTop") and has("WoodBottom") or has("WoodComplete"))
 end

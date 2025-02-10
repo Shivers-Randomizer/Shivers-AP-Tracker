@@ -12,14 +12,17 @@
                     {
                         "type": "itemgrid",
                         "item_margin": "10, 10",
-                        "h_alignment": "left",
-                        "item_size": "5, 5",
+                        "h_alignment": "center",
+                        "item_size": "4, 4",
                         "rows": [
                             [
                                 "AshTop", "ClothTop", "CrystalTop", "LightningTop", "MetalTop", "OilTop", "SandTop", "WaterTop", "WaxTop", "WoodTop"         
                             ],
                             [
                                 "AshBottom", "ClothBottom", "CrystalBottom", "LightningBottom", "MetalBottom", "OilBottom", "SandBottom", "WaterBottom", "WaxBottom", "WoodBottom"
+                            ],
+                            [
+                                "AshComplete", "ClothComplete", "CrystalComplete", "LightningComplete", "MetalComplete", "OilComplete", "SandComplete", "WaterComplete", "WaxComplete", "WoodComplete"
                             ],
                             [
                                 "FrontKey", "LakeKey", "OfficeElKey", "BedElKey", "BedKey", "WorkshopKey", "OfficeKey", "LibraryKey", "MechKey", "ThreeElKey", "Crawling"

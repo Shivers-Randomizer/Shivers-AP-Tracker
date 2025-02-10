@@ -12,6 +12,12 @@
         "codes": "AshBottom"
     },
     {
+        "name": "Ash Pot Complete",
+        "type": "toggle",
+        "img": "images/items/ash_complete.gif",
+        "codes": "AshComplete"
+    },
+    {
         "name": "Cloth Pot Top",
         "type": "toggle",
         "img": "images/items/cloth_top.gif",
@@ -22,6 +28,12 @@
         "type": "toggle",
         "img": "images/items/cloth_bottom.gif",
         "codes": "ClothBottom"
+    },
+    {
+        "name": "Cloth Pot Complete",
+        "type": "toggle",
+        "img": "images/items/cloth_complete.gif",
+        "codes": "ClothComplete"
     },
     {
         "name": "Crystal Pot Top",
@@ -36,6 +48,12 @@
         "codes": "CrystalBottom"
     },
     {
+        "name": "Crystal Pot Complete",
+        "type": "toggle",
+        "img": "images/items/crystal_complete.gif",
+        "codes": "CrystalComplete"
+    },
+    {
         "name": "Lightning Pot Top",
         "type": "toggle",
         "img": "images/items/lightning_top.gif",
@@ -46,6 +64,12 @@
         "type": "toggle",
         "img": "images/items/lightning_bottom.gif",
         "codes": "LightningBottom"
+    },
+    {
+        "name": "Lightning Pot Complete",
+        "type": "toggle",
+        "img": "images/items/lightning_complete.gif",
+        "codes": "LightningComplete"
     },
     {
         "name": "Metal Pot Top",
@@ -60,6 +84,12 @@
         "codes": "MetalBottom"
     },
     {
+        "name": "Metal Pot Complete",
+        "type": "toggle",
+        "img": "images/items/metal_complete.gif",
+        "codes": "MetalComplete"
+    },
+    {
         "name": "Oil Pot Top",
         "type": "toggle",
         "img": "images/items/oil_top.gif",
@@ -70,6 +100,12 @@
         "type": "toggle",
         "img": "images/items/oil_bottom.gif",
         "codes": "OilBottom"
+    },
+    {
+        "name": "Oil Pot Complete",
+        "type": "toggle",
+        "img": "images/items/oil_complete.gif",
+        "codes": "OilComplete"
     },
     {
         "name": "Sand Pot Top",
@@ -84,6 +120,12 @@
         "codes": "SandBottom"
     },
     {
+        "name": "Sand Pot Complete",
+        "type": "toggle",
+        "img": "images/items/sand_complete.gif",
+        "codes": "SandComplete"
+    },
+    {
         "name": "Water Pot Top",
         "type": "toggle",
         "img": "images/items/water_top.gif",
@@ -94,6 +136,12 @@
         "type": "toggle",
         "img": "images/items/water_bottom.gif",
         "codes": "WaterBottom"
+    },
+    {
+        "name": "Water Pot Complete",
+        "type": "toggle",
+        "img": "images/items/water_complete.gif",
+        "codes": "WaterComplete"
     },
     {
         "name": "Wax Pot Top",
@@ -108,6 +156,12 @@
         "codes": "WaxBottom"
     },
     {
+        "name": "Wax Pot Complete",
+        "type": "toggle",
+        "img": "images/items/wax_complete.gif",
+        "codes": "WaxComplete"
+    },
+    {
         "name": "Wood Pot Top",
         "type": "toggle",
         "img": "images/items/wood_top.gif",
@@ -118,6 +172,12 @@
         "type": "toggle",
         "img": "images/items/wood_bottom.gif",
         "codes": "WoodBottom"
+    },
+    {
+        "name": "Wood Pot Complete",
+        "type": "toggle",
+        "img": "images/items/wood_complete.gif",
+        "codes": "WoodComplete"
     },
     {
         "name": "Front Door Key",
@@ -244,12 +304,6 @@
         "type": "toggle",
         "img": "images/items/crawling.jpg",
         "codes": "Crawling"
-    },
-    {
-        "name": "Toggle",
-        "type": "toggle",
-        "img": "images/items/toggle.png",
-        "codes": "toggle"
     },
     {
         "name": "Progressive",

@@ -4,7 +4,7 @@
         "children": [
             {
                 "name": "Ash Ixupi Captured",
-                "access_rules": ["AshTop, AshBottom, $can_capture_ash"],
+                "access_rules": ["$can_capture_ash"],
                 "sections": [
                     {
                         "name": "",
@@ -26,7 +26,7 @@
             },
             {
                 "name": "Cloth Ixupi Captured",
-                "access_rules": ["ClothTop, ClothBottom, $can_capture_cloth"],
+                "access_rules": ["$can_capture_cloth"],
                 "sections": [
                     {
                         "name": "",
@@ -53,7 +53,7 @@
             },
             {
                 "name": "Crystal Ixupi Captured",
-                "access_rules": ["CrystalTop, CrystalBottom, $can_capture_crystal"],
+                "access_rules": ["$can_capture_crystal"],
                 "sections": [
                     {
                         "name": "",
@@ -75,7 +75,7 @@
             },
             {
                 "name": "Lightning Ixupi Captured",
-                "access_rules": ["LightningTop, LightningBottom, $can_capture_lightning"],
+                "access_rules": ["$can_capture_lightning"],
                 "sections": [
                     {
                         "name": "",
@@ -92,7 +92,7 @@
             },
             {
                 "name": "Metal Ixupi Captured",
-                "access_rules": ["MetalTop, MetalBottom, $can_capture_metal"],
+                "access_rules": ["$can_capture_metal"],
                 "sections": [
                     {
                         "name": "",
@@ -119,7 +119,7 @@
             },
             {
                 "name": "Oil Ixupi Captured",
-                "access_rules": ["OilTop, OilBottom, $can_capture_oil"],
+                "access_rules": ["$can_capture_oil"],
                 "sections": [
                     {
                         "name": "",
@@ -141,7 +141,7 @@
             },
             {
                 "name": "Sand Ixupi Captured",
-                "access_rules": ["SandTop, SandBottom, $can_capture_sand"],
+                "access_rules": ["$can_capture_sand"],
                 "sections": [
                     {
                         "name": "",
@@ -163,7 +163,7 @@
             },
             {
                 "name": "Water Ixupi Captured",
-                "access_rules": ["WaterTop, WaterBottom, $can_capture_water"],
+                "access_rules": ["$can_capture_water"],
                 "sections": [
                     {
                         "name": "",
@@ -185,7 +185,7 @@
             },
             {
                 "name": "Wax Ixupi Captured",
-                "access_rules": ["WaxTop, WaxBottom, $can_capture_wax"],
+                "access_rules": ["$can_capture_wax"],
                 "sections": [
                     {
                         "name": "",
@@ -212,7 +212,7 @@
             },
             {
                 "name": "Wood Ixupi Captured",
-                "access_rules": ["WoodTop, WoodBottom, $can_capture_wood"],
+                "access_rules": ["$can_capture_wood"],
                 "sections": [
                     {
                         "name": "",
@@ -252,7 +252,7 @@
                 "access_rules": [],
                 "sections": [
                     {
-                        "name": "Combo Lock in Mailbox",
+                        "name": "Mailbox",
                         "item_count": 1
                     },
                     {
@@ -319,7 +319,7 @@
             },
             {
                 "name": "Office Elevator",
-                "access_rules": ["$has_lake_access", "$has_office_access"],
+                "access_rules": ["$has_office_elevator_access"],
                 "sections": [
                     {
                         "name": "",
@@ -366,7 +366,7 @@
             },
             {
                 "name": "Bedroom Elevator",
-                "access_rules": ["$has_office_access, Crawling"],
+                "access_rules": ["$has_bedroom_elevator_access"],
                 "sections": [
                     {
                         "name": "",
@@ -476,7 +476,7 @@
             },
             {
                 "name": "Three Floor Elevator",
-                "access_rules": ["$has_back_corridor_access, ThreeElKey", "$has_maze_access, ThreeElKey"],
+                "access_rules": ["$has_three_floor_elevator_access"],
                 "sections": [
                     {
                         "name": "",
@@ -514,11 +514,11 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Jade Skull",
+                        "name": "Information Plaque: Jade Skull",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Transforming Masks",
+                        "name": "Information Plaque: Transforming Masks",
                         "item_count": 1
                     },
                     {
@@ -634,6 +634,39 @@
                 ]
             },
             {
+                "name": "Strange Beasts",
+                "access_rules": ["$has_beast_access"],
+                "sections": [
+                    {
+                        "name": "Information Plaque: Bronze Unicorn",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Information Plaque: Griffin",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Information Plaque: Eagles' Nest",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Information Plaque: Large Spider",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Information Plaque: Starfish",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Main Floor",
+                        "x": 140,
+                        "y": 225
+                    }
+                ]
+            },
+            {
                 "name": "Mysteries of the Deep",
                 "access_rules": ["$has_ocean_access"],
                 "sections": [
@@ -646,19 +679,19 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Quartz Crystal",
+                        "name": "Information Plaque: Quartz Crystal",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Poseidon",
+                        "name": "Information Plaque: Poseidon",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Colossus of Rhodes",
+                        "name": "Information Plaque: Colossus of Rhodes",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Poseidon's Temple",
+                        "name": "Information Plaque: Poseidon's Temple",
                         "item_count": 1
                     },
                     {
@@ -679,19 +712,32 @@
                 ]
             },
             {
+                "name": "Maze Staircase",
+                "access_rules": ["$has_ocean_access"],
+                "sections": [
+                    {
+                        "name": "Information Plaque: Subterranean World",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Maze Door Solved",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Basement",
+                        "x": 65,
+                        "y": 200
+                    }
+                ]
+            },
+            {
                 "name": "Subterranean World",
                 "access_rules": ["$has_ocean_access"],
                 "sections": [
                     {
-                        "name": "Info: Subterranean World",
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Info: Dero",
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Door Solved",
+                        "name": "Information Plaque: Dero",
                         "item_count": 1
                     }
                 ],
@@ -712,11 +758,11 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Tomb of the Ixupi",
+                        "name": "Information Plaque: Tomb of the Ixupi",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: The Sphinx",
+                        "name": "Information Plaque: The Sphinx",
                         "item_count": 1
                     },
                     {
@@ -742,30 +788,30 @@
             },
             {
                 "name": "Funeral Rites",
-                "access_rules": ["$has_burial_access"],
+                "access_rules": ["$has_egypt_access"],
                 "sections": [
                     {
                         "name": "Merrick's Notebook Flashback",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Norse Burial Ship",
+                        "name": "Information Plaque: Norse Burial Ship",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Paracas Burial Bundles",
+                        "name": "Information Plaque: Paracas Burial Bundles",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Spectacular Coffins of Ghana",
+                        "name": "Information Plaque: Spectacular Coffins of Ghana",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Animal Crematorium",
+                        "name": "Information Plaque: Animal Crematorium",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Cremation",
+                        "name": "Information Plaque: Cremation",
                         "item_count": 1
                     },
                     {
@@ -786,11 +832,11 @@
                 "access_rules": ["$has_shaman_access"],
                 "sections": [
                     {
-                        "name": "Info: Witch Doctors of the Congo",
+                        "name": "Information Plaque: Witch Doctors of the Congo",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Sarombe Doctor of Mozambique",
+                        "name": "Information Plaque: Sarombe Doctor of Mozambique",
                         "item_count": 1
                     },
                     {
@@ -811,31 +857,31 @@
                 "access_rules": ["$has_shaman_access"],
                 "sections": [
                     {
-                        "name": "Info: Fisherman's Canoe God",
+                        "name": "Information Plaque: Fisherman's Canoe God",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Mayan Gods",
+                        "name": "Information Plaque: Mayan Gods",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Thor",
+                        "name": "Information Plaque: Thor",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Celtic Janus Sculpture",
+                        "name": "Information Plaque: Celtic Janus Sculpture",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Sumerian Bull God - An",
+                        "name": "Information Plaque: Sumerian Bull God - An",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Sumerian Lyre",
+                        "name": "Information Plaque: Sumerian Lyre",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Chuen",
+                        "name": "Information Plaque: Chuen",
                         "item_count": 1
                     },
                     {
@@ -924,19 +970,19 @@
                 "access_rules": ["$has_planets_access"],
                 "sections": [
                     {
-                        "name": "Info: Coincidence or Extraterrestrial Visits?",
+                        "name": "Information Plaque: Coincidence or Extraterrestrial Visits?",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Planets",
+                        "name": "Information Plaque: Planets",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Astronomical Construction",
+                        "name": "Information Plaque: Astronomical Construction",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Aliens",
+                        "name": "Information Plaque: Aliens",
                         "item_count": 1
                     },
                     {
@@ -965,23 +1011,23 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Info: African Creation Myth",
+                        "name": "Information Plaque: African Creation Myth",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Apophis the Serpent",
+                        "name": "Information Plaque: Apophis the Serpent",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Death",
+                        "name": "Information Plaque: Death",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Cyclops",
+                        "name": "Information Plaque: Cyclops",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Lycanthropy",
+                        "name": "Information Plaque: Lycanthropy",
                         "item_count": 1
                     },
                     {
@@ -1002,11 +1048,11 @@
                 "access_rules": ["$has_torture_access"],
                 "sections": [
                     {
-                        "name": "Info: Gallows",
+                        "name": "Information Plaque: Gallows",
                         "item_count": 1
                     },
                     {
-                        "name": "Info: Guillotine",
+                        "name": "Information Plaque: Guillotine",
                         "item_count": 1
                     },
                     {
@@ -1031,7 +1077,7 @@
                 "access_rules": ["$has_puzzle_access"],
                 "sections": [
                     {
-                        "name": "Info: Mastermind",
+                        "name": "Information Plaque: Mastermind",
                         "item_count": 1
                     },
                     {
@@ -1052,39 +1098,6 @@
                         "map": "Third Floor",
                         "x": 300,
                         "y": 180
-                    }
-                ]
-            },
-            {
-                "name": "Strange Beasts",
-                "access_rules": ["$has_beast_access"],
-                "sections": [
-                    {
-                        "name": "Info: Bronze Unicorn",
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Info: Griffin",
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Info: Eagles' Nest",
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Info: Large Spider",
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Info: Starfish",
-                        "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Main Floor",
-                        "x": 140,
-                        "y": 225
                     }
                 ]
             }
